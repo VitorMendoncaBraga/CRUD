@@ -9,31 +9,31 @@ interface IUserProps {
 }
 
 export class User extends Entity<IUserProps> {
-    get name(){
+    get name() {
         return this.props.name
     }
 
-    get email(){
+    get email() {
         return this.props.email
     }
 
-    get createdAt(){
+    get createdAt() {
         return this.props.createdAt
     }
 
-    set name(name: string){
+    set name(name: string) {
         this.props.name = name
     }
 
-    set email(email: string){
+    set email(email: string) {
         this.props.email = email
     }
 
-    touch(){
+    touch() {
         this.props.updatedAt = new Date()
     }
 
-    static create(props: IUserProps, id?: string){
+    static create(props: IUserProps, id?: string): User {
         return new User(props, id)
     }
 
