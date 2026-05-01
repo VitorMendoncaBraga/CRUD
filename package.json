@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "pnpm tsx --watch ./src/server.ts",
-    "test": "pnpm vitest run src/use-cases"
+    "test:unit": "pnpm vitest run src/use-cases"
   },
   "keywords": [],
   "author": "",
