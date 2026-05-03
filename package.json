@@ -5,8 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "pnpm tsx --watch ./src/server.ts",
-    "test:unit": "pnpm vitest run src/use-cases"
+    "dev": "tsx --watch ./src/server.ts",
+    "test:unit": "vitest run src/use-cases"
   },
   "keywords": [],
   "author": "",
